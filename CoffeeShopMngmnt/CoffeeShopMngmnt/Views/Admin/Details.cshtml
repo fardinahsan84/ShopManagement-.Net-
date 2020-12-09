@@ -1,0 +1,65 @@
+﻿@model CoffeeShopMngmnt.Model.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <fieldset>
+        <legend>User</legend>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Username)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Username)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Password)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Password)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Phone)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Phone)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Address)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Address)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.Email)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.Email)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.UserType)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.UserType)
+        </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id=Model.UserId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

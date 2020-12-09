@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CoffeeShopMngmntStoreContainer" CdmEntityContainer="CoffeeShopDataContext">
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="CoffeeShopMngmnt.Item">
+        <MappingFragment StoreEntitySet="Item">
+          <ScalarProperty Name="temId" ColumnName="temId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ItemPrice" ColumnName="ItemPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="CoffeeShopMngmnt.Sale">
+        <MappingFragment StoreEntitySet="Sale">
+          <ScalarProperty Name="Order_Number" ColumnName="Order_Number" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="SaleAmount" ColumnName="SaleAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sale_Detail">
+      <EntityTypeMapping TypeName="CoffeeShopMngmnt.Sale_Detail">
+        <MappingFragment StoreEntitySet="Sale_Detail">
+          <ScalarProperty Name="Order_Number" ColumnName="Order_Number" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="CoffeeShopMngmnt.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

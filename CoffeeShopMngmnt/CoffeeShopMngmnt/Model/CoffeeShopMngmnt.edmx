@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CoffeeShopMngmnt.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Items">
+          <Key>
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="ItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ItemName" Type="varchar" MaxLength="50" />
+          <Property Name="ItemPrice" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="Order_Number" />
+          </Key>
+          <Property Name="Order_Number" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmployeeId" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="SaleAmount" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sale_Detail">
+          <Key>
+            <PropertyRef Name="Serial" />
+          </Key>
+          <Property Name="Order_Number" Type="int" Nullable="false" />
+          <Property Name="Serial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ItemId" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="float" Nullable="false" />
+          <Property Name="Discount" Type="float" Nullable="false" />
+          <Property Name="NetTotal" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="Address" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="UserType" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_Sale_Detail_Items">
+          <End Role="Items" Type="Self.Items" Multiplicity="1" />
+          <End Role="Sale_Detail" Type="Self.Sale_Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Items">
+              <PropertyRef Name="ItemId" />
+            </Principal>
+            <Dependent Role="Sale_Detail">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_Detail_Sale">
+          <End Role="Sale" Type="Self.Sale" Multiplicity="1" />
+          <End Role="Sale_Detail" Type="Self.Sale_Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sale">
+              <PropertyRef Name="Order_Number" />
+            </Principal>
+            <Dependent Role="Sale_Detail">
+              <PropertyRef Name="Order_Number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CoffeeShopMngmntStoreContainer">
+          <EntitySet Name="Items" EntityType="Self.Items" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sale" EntityType="Self.Sale" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sale_Detail" EntityType="Self.Sale_Detail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Sale_Detail_Items" Association="Self.FK_Sale_Detail_Items">
+            <End Role="Items" EntitySet="Items" />
+            <End Role="Sale_Detail" EntitySet="Sale_Detail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_Detail_Sale" Association="Self.FK_Sale_Detail_Sale">
+            <End Role="Sale" EntitySet="Sale" />
+            <End Role="Sale_Detail" EntitySet="Sale_Detail" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CoffeeShopMngmnt" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="ItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ItemPrice" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Sale_Detail" Relationship="Self.FK_Sale_Detail_Items" FromRole="Items" ToRole="Sale_Detail" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="Order_Number" />
+          </Key>
+          <Property Name="Order_Number" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SaleAmount" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Sale_Detail" Relationship="Self.FK_Sale_Detail_Sale" FromRole="Sale" ToRole="Sale_Detail" />
+        </EntityType>
+        <EntityType Name="Sale_Detail">
+          <Key>
+            <PropertyRef Name="Serial" />
+          </Key>
+          <Property Name="Order_Number" Type="Int32" Nullable="false" />
+          <Property Name="Serial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ItemId" Type="Int32" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Double" Nullable="false" />
+          <Property Name="Discount" Type="Double" Nullable="false" />
+          <Property Name="NetTotal" Type="Double" Nullable="false" />
+          <NavigationProperty Name="Item" Relationship="Self.FK_Sale_Detail_Items" FromRole="Sale_Detail" ToRole="Items" />
+          <NavigationProperty Name="Sale" Relationship="Self.FK_Sale_Detail_Sale" FromRole="Sale_Detail" ToRole="Sale" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Sale_Detail_Items">
+          <End Role="Items" Type="Self.Item" Multiplicity="1" />
+          <End Role="Sale_Detail" Type="Self.Sale_Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Items">
+              <PropertyRef Name="ItemId" />
+            </Principal>
+            <Dependent Role="Sale_Detail">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_Detail_Sale">
+          <End Role="Sale" Type="Self.Sale" Multiplicity="1" />
+          <End Role="Sale_Detail" Type="Self.Sale_Detail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sale">
+              <PropertyRef Name="Order_Number" />
+            </Principal>
+            <Dependent Role="Sale_Detail">
+              <PropertyRef Name="Order_Number" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CoffeeShopMngmntDataContext1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Items" EntityType="Self.Item" />
+          <EntitySet Name="Sales" EntityType="Self.Sale" />
+          <EntitySet Name="Sale_Detail" EntityType="Self.Sale_Detail" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK_Sale_Detail_Items" Association="Self.FK_Sale_Detail_Items">
+            <End Role="Items" EntitySet="Items" />
+            <End Role="Sale_Detail" EntitySet="Sale_Detail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_Detail_Sale" Association="Self.FK_Sale_Detail_Sale">
+            <End Role="Sale" EntitySet="Sales" />
+            <End Role="Sale_Detail" EntitySet="Sale_Detail" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CoffeeShopMngmntStoreContainer" CdmEntityContainer="CoffeeShopMngmntDataContext1">
+          <EntitySetMapping Name="Items">
+            <EntityTypeMapping TypeName="CoffeeShopMngmnt.Item">
+              <MappingFragment StoreEntitySet="Items">
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+                <ScalarProperty Name="ItemPrice" ColumnName="ItemPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sales">
+            <EntityTypeMapping TypeName="CoffeeShopMngmnt.Sale">
+              <MappingFragment StoreEntitySet="Sale">
+                <ScalarProperty Name="Order_Number" ColumnName="Order_Number" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="SaleAmount" ColumnName="SaleAmount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sale_Detail">
+            <EntityTypeMapping TypeName="CoffeeShopMngmnt.Sale_Detail">
+              <MappingFragment StoreEntitySet="Sale_Detail">
+                <ScalarProperty Name="Order_Number" ColumnName="Order_Number" />
+                <ScalarProperty Name="Serial" ColumnName="Serial" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="NetTotal" ColumnName="NetTotal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="CoffeeShopMngmnt.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

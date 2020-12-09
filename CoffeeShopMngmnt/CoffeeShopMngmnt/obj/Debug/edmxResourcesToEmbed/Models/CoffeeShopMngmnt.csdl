@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CoffeeShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="ItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ItemPrice" Type="Double" />
+  </EntityType>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="Order_Number" />
+    </Key>
+    <Property Name="Order_Number" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="SaleAmount" Type="Double" />
+  </EntityType>
+  <EntityType Name="Sale_details">
+    <Key>
+      <PropertyRef Name="Serial" />
+    </Key>
+    <Property Name="Order_Number" Type="Int32" Nullable="false" />
+    <Property Name="Serial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Rate" Type="Double" Nullable="false" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+    <Property Name="Discount" Type="Double" Nullable="false" />
+    <Property Name="NetAmount" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="CoffeeShopMngmntData1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Items" EntityType="Self.Item" />
+    <EntitySet Name="Sales" EntityType="Self.Sale" />
+    <EntitySet Name="Sale_details" EntityType="Self.Sale_details" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+  </EntityContainer>
+</Schema>

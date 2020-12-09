@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CoffeeShopMngmntStoreContainer" CdmEntityContainer="CoffeeShopMngmntDataCon">
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="CoffeeShopMngmnt.Item">
+        <MappingFragment StoreEntitySet="Item">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Item_name" ColumnName="Item_name" />
+          <ScalarProperty Name="Item_price" ColumnName="Item_price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sale_Details">
+      <EntityTypeMapping TypeName="CoffeeShopMngmnt.Sale_Details">
+        <MappingFragment StoreEntitySet="Sale_Details">
+          <ScalarProperty Name="Order_number" ColumnName="Order_number" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="CoffeeShopMngmnt.Sale">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="Order_number" ColumnName="Order_number" />
+          <ScalarProperty Name="Order_date" ColumnName="Order_date" />
+          <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+          <ScalarProperty Name="Sale_amount" ColumnName="Sale_amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="CoffeeShopMngmnt.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

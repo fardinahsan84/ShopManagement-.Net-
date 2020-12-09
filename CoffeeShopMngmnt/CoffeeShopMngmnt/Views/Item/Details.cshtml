@@ -1,0 +1,37 @@
+﻿@model CoffeeShopMngmnt.Model.Item
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Item</legend>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.ItemName)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.ItemName)
+        </div>
+    
+        <div class="display-label">
+             @Html.DisplayNameFor(model => model.ItemPrice)
+        </div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.ItemPrice)
+        </div>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id=Model.ItemId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

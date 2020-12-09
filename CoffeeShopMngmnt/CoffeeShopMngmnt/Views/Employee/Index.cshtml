@@ -1,0 +1,63 @@
+﻿@model CoffeeShopMngmnt.Model.User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <th><h1>Welcome to Employee Page</h1></th>
+        </tr>
+        <tr>
+            <th>
+
+                <h2>Employee name : @Html.DisplayFor(model => model.Username) </h2>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Phone @Html.DisplayFor(model => model.Phone)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Address:@Html.DisplayFor(model => model.Address)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                email :@Html.DisplayFor(model => model.Email)
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+        </tr>
+        </table>
+        <p>
+            @Html.ActionLink("Edit My Profile", "Edit", new { id = Model.UserId })  <br>        
+        </p>
+    <table>
+
+        <tr>
+            <th>
+
+                <br><br>@Html.ActionLink("Place Order", "PlaceOrder")
+            </th>
+        </tr>
+        <tr>
+            <th>
+
+                <br><br>@Html.ActionLink("Logout", "Logout")
+            </th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<CoffeeShopMngmnt.Model.Sale>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <table align="center">
+        <tr>
+            <td> <h2>Sale Information </h2></td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Order_Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmployeeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SaleAmount)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Order_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaleAmount)
+            </td>
+            <td>
+                
+                @Html.ActionLink("Details", "Details", new { id=item.Order_Number }) |
+                
+            </td>
+        </tr>
+    }
+    
+    </table>
+    
+    <p>
+        @Html.ActionLink("Back", "Back")
+    </p>
+</body>
+</html>

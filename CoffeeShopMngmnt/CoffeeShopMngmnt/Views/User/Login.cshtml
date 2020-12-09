@@ -1,0 +1,44 @@
+﻿@model CoffeeShopMngmnt.Model.User
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+   <div>
+       
+        <form action="~/User/Login" method="post">
+
+
+
+            <table align="center">
+            
+            <tr>
+                <td colspan="2" align="center">@ViewData["invalidlogin"]</td>
+            </tr>
+            <tr>
+                <td><label>Username</label></td>
+                <td><input type="text" name="username" required/></td>
+
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name ="password" required/></td>
+                </tr>
+                <tr>
+                <td><input type="submit" name="submit" value ="SUBMIT" /> <a href="http://localhost:55634/Home/" >Forget password</ a></td>
+             </tr>  
+             </table>
+        </form>  
+    </div>
+</body>
+</html>
+

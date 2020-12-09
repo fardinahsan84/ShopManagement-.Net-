@@ -1,0 +1,111 @@
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.pdb
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\EntityFramework.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Microsoft.Web.Infrastructure.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Newtonsoft.Json.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Helpers.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Mvc.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Razor.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Deployment.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Razor.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\EntityFramework.xml
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Newtonsoft.Json.xml
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Helpers.xml
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Mvc.xml
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Razor.xml
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.xml
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Deployment.xml
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Razor.xml
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.csprojResolveAssemblyReference.cache
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.dll
+F:\10th semester\.Net\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.pdb
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.csprojResolveAssemblyReference.cache
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.pdb
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.dll.config
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.pdb
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\EntityFramework.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Newtonsoft.Json.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Net.Http.Formatting.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Helpers.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.WebHost.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Mvc.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Razor.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Razor.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\EntityFramework.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Newtonsoft.Json.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Net.Http.Formatting.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Helpers.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.WebHost.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Mvc.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Razor.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Razor.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.csproj.CoreCompileInputs.cache
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.pdb
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.dll.config
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.pdb
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\EntityFramework.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Newtonsoft.Json.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Net.Http.Formatting.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Helpers.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.WebHost.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Mvc.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Razor.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Razor.dll
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\EntityFramework.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Newtonsoft.Json.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Net.Http.Formatting.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Helpers.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.WebHost.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Mvc.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Razor.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Razor.xml
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.csproj.CopyComplete
+C:\Users\Askar\Downloads\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.csprojAssemblyReference.cache
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.dll.config
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\CoffeeShopMngmnt.pdb
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\EntityFramework.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Newtonsoft.Json.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Net.Http.Formatting.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Helpers.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.WebHost.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Mvc.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Razor.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Razor.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\EntityFramework.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\Newtonsoft.Json.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Net.Http.Formatting.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Helpers.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Http.WebHost.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Mvc.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.Razor.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\bin\System.Web.WebPages.Razor.xml
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.csprojResolveAssemblyReference.cache
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.dll
+C:\Users\ikram\Downloads\Compressed\CoffeeShopMngmnt-20200311T061543Z-001-20200312T161456Z-001\CoffeeShopMngmnt-20200311T061543Z-001\CoffeeShopMngmnt\CoffeeShopMngmnt\obj\Debug\CoffeeShopMngmnt.pdb

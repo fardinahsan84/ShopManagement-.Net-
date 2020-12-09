@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CoffeeShopMngmnt.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ItemId" />
+    </Key>
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Item_name" Type="varchar" MaxLength="50" />
+    <Property Name="Item_price" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Sale_Details">
+    <Key>
+      <PropertyRef Name="Serial" />
+    </Key>
+    <Property Name="Order_number" Type="int" Nullable="false" />
+    <Property Name="Serial" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Rate" Type="float" Nullable="false" />
+    <Property Name="Amount" Type="float" Nullable="false" />
+    <Property Name="Discount" Type="float" Nullable="false" />
+    <Property Name="NetAmount" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="Order_number" />
+    </Key>
+    <Property Name="Order_number" Type="int" Nullable="false" />
+    <Property Name="Order_date" Type="datetime" Nullable="false" />
+    <Property Name="Employee_Id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sale_amount" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="UserType" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Sale_Details_Item">
+    <End Role="Item" Type="Self.Item" Multiplicity="1" />
+    <End Role="Sale_Details" Type="Self.Sale_Details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="Sale_Details">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sale_Details_Sales">
+    <End Role="Sales" Type="Self.Sales" Multiplicity="1" />
+    <End Role="Sale_Details" Type="Self.Sale_Details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sales">
+        <PropertyRef Name="Order_number" />
+      </Principal>
+      <Dependent Role="Sale_Details">
+        <PropertyRef Name="Order_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CoffeeShopMngmntStoreContainer">
+    <EntitySet Name="Item" EntityType="Self.Item" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sale_Details" EntityType="Self.Sale_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sales" EntityType="Self.Sales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Sale_Details_Item" Association="Self.FK_Sale_Details_Item">
+      <End Role="Item" EntitySet="Item" />
+      <End Role="Sale_Details" EntitySet="Sale_Details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sale_Details_Sales" Association="Self.FK_Sale_Details_Sales">
+      <End Role="Sales" EntitySet="Sales" />
+      <End Role="Sale_Details" EntitySet="Sale_Details" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
